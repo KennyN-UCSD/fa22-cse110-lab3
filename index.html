@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SwiftRaven Meeting Notes - 10/9/2022</title>
+        <meta name="author" content="Kenny Nguyen"/>
+        <link rel="icon" type="image/x-icon" href="/media/raven.png"/>
+    </head>
+    <body>
+        <header>
+            <div class="meeting-information">
+                <h1>SwiftRaven Meeting</h1>
+                <h2>Weekly Planning</h2>
+                <h3>Monday - October 9, 2023</h3>
+            </div>
+            
+            <hr>
+
+            <div class="attendance">
+                <h1>Attendance</h1>
+                <ul>
+                    <li>Brenda Stewart - <b>Present</b></li>
+                    <li>Chris Sanchez - <b>Present</b></li>
+                    <li>James Price - <b>Present</b></li>
+                    <li>Ronald Cooper - <b>Absent</b></li>
+                        <ul>
+                         <li>Reason: Illness</li>
+                        </ul>
+                    <li>Maria Zielinski - <b>Present</b></li>
+                    <li>Mark Chang - <b>Present</b></li>
+                    <li>Dana Lafrenz - <b>Present</b></li>
+                    <li>Subramaniam Paraiyar - <b>Present</b></li>
+                </ul>
+            </div>
+        </header>
+
+        <hr>
+        
+        <main>
+            <h1>Meeting Details</h2>
+            <div class="agenda">
+                <details>
+                    <summary>Agenda</summary>
+                    <ol>
+                        <li>Meeting Warmup</li>
+                        <li>Attendance and Record Setup</li>
+                        <li>Announcements</li>
+                        <li>Previous Meeting Minutes</li>
+                        <li>Continue Contract Negotiation Discussion</li>
+                        <li>Design Team Status Report</li>
+                        <li>Dev Team Status Report</li>
+                        <li>Product Management Team Status Report</li>
+                        <li>Discuss Important New Business</li>
+                        <li>Company Halloween Event Planning</li>
+                        <li>Meeting Adjournment</li>
+                    </ol>
+                </details>  
+            </div>
+
+            <div class="unfinished-business">
+                <h2>Unfinished Business</h2>
+                <section>
+                    <h3>Contract Negotiation</h3>
+                    <p>The details of the contract with the client <span class="client">Adele Stainthorpe</span> were finalized. <strong>Product development meeting will take place next week.</strong></p>
+                </section>
+            </div>
+
+            <div class="new-business">
+                <h2>New Business</h2>
+                <section>
+                    <h3>Featherspot New Feature</h3>
+                    <p>The design team has suggested a new feature for our mobile application <span class="mobile-project"><i>Featherspot</i></span> that should make user experience better. The development team and product management team have agreed to move forth with the suggestion and development planning will begin after the current job is finished.</p>
+                    <h3>TalonLight New Feature</h3>
+                    <p>The deisgn team proposed a new feature for our desktop application <span class="mobile-project"><i>TalonLight</i></span> that could be a potentially exciting addition. The product management team suggests shelving the idea for some other time.</p>
+                </section>
+            </div>
+
+            <div class="miscellaneous">
+                <h2>Miscellaneous</h2>
+                <section>
+                    <h3>Halloween Office Party</h3>
+                    <p>Brenda proposed to hold a Halloween party at the office. All meeting members agreed to the proposal.<br>
+                        Maria suggests the party should be a <em>potluck</em>. James suggests a pizza party. Chris suggests going out for dinner.<br>
+                        Party planning will be done <em>outside</em> of official meetings.</p>
+                    <p>The type of party will be organized based on team members' inputs in the minutes form.</p>
+                </section>
+
+                <section>
+                    <h3>Halloween Office Decorations</h3>
+                    <p>Brenda also proposed to set up Halloween decorations at the office. All meeting members agreed to the proposal.<br>
+                        Mark and Maria will be charge of purchasing and arranging decorations.</p>
+                    <p>Decorations will be purchased based on team members' inputs in the minutes form.</p>
+                </section>
+
+                <section>
+                    <h3>Halloween 2023 Potluck and Decorations Requests</h3>
+                    <form action="" method="get" class="halloween-decorations-2023">
+                        <div class="halloween-decorations-2023">
+                            <label for="name">Enter your name: </label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="halloween-decorations-2023">
+                            <label for="todays-date">Enter today's date: </label>
+                            <input type="date" id="todays-date" name="todays-date" required>
+                        </div>
+
+                        <div class="halloween-decorations-2023">
+                            <label for="date-select">Selcect which date for the party work best for you.</label>
+                            <select name="dates" id="date-select">
+                                <option value="">--Please choose a date --</option>
+                                <option value="sat">Saturday, October 28</option>
+                                <option value="sun">Sunday, October 29</option>
+                                <option value="mon">Monday, October 30</option>
+                                <option value="tue">Tuesday, October 31</option>
+                            </select>
+                        </div>
+
+                        <div class="halloween-decorations-2023">
+                            <fieldset>
+                                <legend>Select any combination of the three are you fine with being the Halloween party.</legend>
+
+                                <input type="checkbox" name="party-type" id="potluck" value="L">
+                                <label for="potluck">Potluck</label>
+                                
+                                <input type="checkbox" name="party-type" id="pizza" value="P">
+                                <label for="pizza">Pizza Party</label>
+                                
+                                <input type="checkbox" name="party-type" id="dinner" value="D">
+                                <label for="dinner">Go out for dinner</label>
+                            </fieldset>
+                        </div>
+
+                        <div class="halloween-decorations-2023">
+                            <label for="pizza-select">Selcect a pizza.</label>
+                            <input list="pizza-types" id="pizza-select" name="pizza-select">
+
+                            <datalist id="pizza-select">
+                                <option value="Cheese">
+                                <option value="Pepperoni">
+                                <option value="Combination">
+                                <option value="Hawaiian">
+                                <option value="Other"> 
+                            </datalist>
+                        </div>
+
+                        <div class="halloween-decorations-2023">
+                            <fieldset>
+                                <legend>Should the Halloween party be dry?</legend>
+
+                                <input type="radio" name="alcohol" id="yes" value="Y">
+                                <label for="yes">Yes</label>
+                                
+                                <input type="radio" name="alcohol" id="no" value="N">
+                                <label for="no">No</label>
+                            </fieldset>
+                        </div>
+
+                        <div class="halloween-decorations-2023">
+                            <label for="request">What decorations would you like to see?</label>
+                            <textarea type="request" id="request" rows="3" columns="33">
+                            Cobwebs, pumpkins, witch hats...
+                            </textarea>
+                        </div>
+
+                        <div class="halloween-decorations-2023">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+            <div class="diagrams">
+                <h2>Diagrams</h2>
+                <section>
+                    <h3>Featherspot New Feature Mockup</h3>
+                    <img class="fit-picture" src="/media/demo.png" alt="Fireworks display upon completion">
+                </section>
+            </div>
+
+            <div class="audio-recording">
+                <h2>Meeting Audio Recording</h2>
+                <figure>
+                    <figcaption>10-9-2022 Meeting Audio:</figcaption>
+                    <audio controls src="/media/cellystix.mp3">
+                        <a href="/media/cellystix.mp3">Download audio</a>
+                    </audio>
+                </figure>
+            </div>
+
+            <div class="video-recording">
+                <h2>Meeting Video Recording</h2>
+                <video controls width="256">
+                    <source src="/media/cellystix.mp4" type="video/mp4">
+                    Download the <a href="/media/cellystix.mp4">MP4</a> video.
+                </video>
+            </div>
+        </main>
+
+        <hr>
+    </body>
+
+    <footer>
+        <div class="author">
+            <h2>Minutes Author</h2>
+            <p>These meeting minutes were written by Subramaniam Paraiyar.</p>
+        </div>
+
+        <div class="extras">
+            <button class="big-button"  
+                    type="button">
+                Send e-mail
+            </button>
+        </div>
+
+        <div class="sources">
+            <h2>Media Sources</h2>
+            <a href="https://www.flaticon.com/free-icons/crow" title="crow-icons">Crow icons created by Freepik - Flaticon</a>
+            <a href="https://www.youtube.com/watch?v=cjZpihtMDrA" title="cellystix">GET CELLYSTIX'D LOL - chill face</a>
+        </div>
+    </footer>
+</html>
