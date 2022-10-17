@@ -68,8 +68,13 @@ h2 ~ h3 {
 }
 
 /* Agenda box entries */
-ul > li {
+ul > li,
+ol > li {
     color: rgb(20,100,150);
+}
+
+span.mobile-project {
+    color: peru;
 }
 
 .unfinished-business,
