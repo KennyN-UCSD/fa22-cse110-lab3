@@ -7,12 +7,12 @@ assignees: ''
 
 ---
 
-**Have these change been made yet?**
-Yes.
+**Have these changes been made yet?**
+No.
 
 **Changes**
 - Ex. Changed the color of banner
 - Ex. Added new button
 
-**Purpose of changes
+**Purpose of changes**
 - Ex. Visual clarity
