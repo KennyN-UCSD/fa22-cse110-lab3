@@ -1,20 +1,34 @@
 /* Fredericka the Great font for titles */
 @font-face {
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fredericka the Great';
+    font-style: normal;
     src: url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-  }
+}
+
+/* Standard font */
+* {
+    font-family: Helvetica, Verdana, sans-serif;
+}
 
 /* Meeting information box */
 .meeting-information {
     background-color: #BBBBBB;
-    height: 300px;
-    width: 600px;
+    height: 200px;
+    width: 400px;
 }
 
 /* Company title color */
-.h1 {
+h1 {
     color: rgb(0,0,0);
-    font-family: "Fredericka the Great", "Fredericka the Great", cursive;
+    font-family: 'Fredericka the Great', Helvetica, Verdana, sans-serif;
+}
+
+h1 + h2 {
+    text-decoration: underline;
+}
+
+h2 ~ h3 {
+    text-decoration: dotted;
 }
 
 /* Meeting title color */
@@ -36,12 +50,12 @@
 }
 
 /* Agenda box */
-.agenda {
+.agenda details {
     background-color: #BBBBBB;
 
     position: static;
     top: ex;
-    left: 0.5in;
+    left: 1in;
 
     margin: vw vh vw vh;
     padding: 1pt 1pt 1pt 1pt;
@@ -54,8 +68,13 @@
 }
 
 /* Agenda box entries */
-.agenda li {
+ul > li {
     color: rgb(20,100,150);
+}
+
+.unfinished-business,
+.new-business {
+    background-color: #ffaaaa;
 }
 
 /* Halloween form box */
@@ -78,16 +97,18 @@
 
 /* Form Checkbox */
 a[submit] {
+    color: aquamarine;
     flex-shrink: 2;
     align-self: flex-end;
 }
 
-#yes {
-    color: green;
+#pizza-types {
+    color: blueviolet;
 }
 
-#no {
-    color: red;
+a[title] {
+    text-transform: uppercase;
+    text-decoration: dashed;
 }
 
 .random {
@@ -114,6 +135,8 @@ a[submit] {
 }
 
 .big-button:hover {
+    height: 1in;
+    width: 2in;
     text-decoration: underline;
     text-align: center;
 }   
