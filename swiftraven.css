@@ -1,0 +1,124 @@
+/* Fredericka the Great font for titles */
+@font-face {
+    font-family: 'Fredericka the Great', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+  }
+
+/* Meeting information box */
+.meeting-information {
+    background-color: #BBBBBB;
+    height: 300px;
+    width: 600px;
+}
+
+/* Company title color */
+.h1 {
+    color: rgb(0,0,0);
+    font-family: "Fredericka the Great", "Fredericka the Great", cursive;
+}
+
+/* Meeting title color */
+.meeting-information h2 {
+    color: blue;
+}
+
+/* Date color */
+.meeting-information h3 {
+    color: hsl(270,70%,40%);
+}
+
+/* Attendance */
+.attendance ul {
+    display: grid;
+    grid-template-columns: [col1-start] 70% [col1-end] 10px [third-line] autp  [last-line];
+    grid-row-gap: 5px;
+    justify-items: center;
+}
+
+/* Agenda box */
+.agenda {
+    background-color: #BBBBBB;
+
+    position: static;
+    top: ex;
+    left: 0.5in;
+
+    margin: vw vh vw vh;
+    padding: 1pt 1pt 1pt 1pt;
+    border: 2px;
+}
+
+/* Agenda box title */
+.agenda summary {
+    color: green;
+}
+
+/* Agenda box entries */
+.agenda li {
+    color: rgb(20,100,150);
+}
+
+/* Halloween form box */
+.halloween-decorations-2023 {
+    background-color: orange;
+
+    position: relative;
+    left: 1in;
+
+    margin-top: vw;
+    margin-right: vh;
+    margin-bottom: vw;
+    margin-left: vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+/* Form Checkbox */
+a[submit] {
+    flex-shrink: 2;
+    align-self: flex-end;
+}
+
+#yes {
+    color: green;
+}
+
+#no {
+    color: red;
+}
+
+.random {
+    background-color: #77ffff;
+    color: black;
+    min-width: 500px;
+    max-width: 1000px;
+}
+
+@media (min-width: 600px) {
+    footer {
+        background-color: #777777;
+    }
+}
+
+.author h2 {
+    text-decoration: dotted;
+    text-align: right;
+}
+
+.author p {
+    text-decoration: underline;
+    text-align: right;
+}
+
+.big-button:hover {
+    text-decoration: underline;
+    text-align: center;
+}   
+
+.big-button:active {
+    text-decoration: wavy;
+    text-align: right;   
+}
